@@ -1,1 +1,44 @@
-<h1>test</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+</style>
+</head>
+<body>
+
+<video autoplay muted loop>
+  <source src="maplesutori.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<iframe src="maplesutori.mp3" allow="autoplay" style="display:none" id="iframeAudio" >
+</iframe> 
+
+</body>
+</html>
