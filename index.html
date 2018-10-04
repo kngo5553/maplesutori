@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Styling to make the background video. -->
 <style>
 * {
     box-sizing: border-box;
@@ -23,22 +24,25 @@ video {
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
- background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
-  background-size: cover;
-  transition: 1s opacity;
+	background: url('https://i.imgur.com/tAA64dk.png') no-repeat;
+	background-size: cover;
+	transition: 1s opacity;
 }
 
 </style>
 </head>
 <body>
 
+<!-- Plays html5 video. It has to be muted for autoplay to work. -->
 <video autoplay muted loop>
   <source src="maplesutori.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
+<!-- Dummy mp3 file to allow autoplay audio to work. -->
 <iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
 
+<!-- The real audio file plays here. -->
 <audio id="player" autoplay loop>
     <source src="maplesutori.mp3" type="audio/mp3">
 </audio>
