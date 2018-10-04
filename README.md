@@ -1,2 +1,2 @@
 # Maplesutori
-Website that autoplays the maplesutori video
+Website that autoplays the maplesutori video.
